@@ -1,0 +1,42 @@
+
+using System;
+namespace ConsoleApp {
+class GreetingProgram     {
+static void Main (string[] args)    {
+        
+        Console.Write("Enter your name: "); 
+        string name = Console.ReadLine(); 
+        Console.Write("Enter the total number of your enrolled subjects: ");
+        int subjects;
+        subjects = Convert.ToInt32(Console.ReadLine()); 
+        Console.Write("Enter the price of your favorite book: ");
+        double price;
+        price = Convert.ToDouble(Console.ReadLine());
+        
+        Console.Write("Enter your age: ");
+        int age;
+        age = Convert.ToInt32(Console.ReadLine());
+        
+    
+    
+        if (age >= 18)    {
+        
+        Console.WriteLine("You are enrolled, here's your ouput");
+            Console.Write("\nName: " + name );
+            Console.Write("\nTotal Enrolled: " + subjects);
+            Console.Write("\nPrice of the book: " + price);
+    
+        } else if(age < 18) {
+            Console.WriteLine("");
+            Console.WriteLine("You are underage, please exit in our system");
+            Console.WriteLine(": >");
+            
+        } else 
+            Console.WriteLine("Hapart perd");
+            
+    
+    
+    
+        }
+    }
+}
